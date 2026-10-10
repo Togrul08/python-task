@@ -205,3 +205,46 @@ else:
 
 
 #Task14
+a = int(input("First side"))
+b = int(input("Second side"))
+c = int(input("Third side"))
+if a + b > c:
+    if a + c > b:
+        if b + c > a:
+                if a == b == c:
+                    print("Equilateral")
+                elif a == b or a == c or b == c:
+                    print("Isosceles")
+                else:
+                    print("Scalene")
+        else:
+            print("Error")
+    else:
+        print("Error")
+else:
+    print("Error")
+
+
+
+#Task15
+age = int(input("Enter your age"))
+exam = int(input("Enter exam score"))
+school = int(input("Enter school score"))
+if age < 16:
+    print("Rejected")
+elif exam < 0 or exam > 700:
+    print("Invalid exam score")
+elif school < 0 or school > 100:
+    print("Invalid school score")
+else:
+    if exam >= 600:
+        print("Scholarship")
+    elif exam >= 450:
+        print("Accepted")
+    elif exam >= 300:
+        if school >= 80:
+            print("Accepted")
+        else:
+            print("Rejected")
+    else:
+        print("Rejected")
