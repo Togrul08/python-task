@@ -168,3 +168,40 @@ if usage >= 0:
 
 
 #Task12
+distance = int(input("Enter distance"))
+startingfee = 2
+if distance < 0:
+    print("Invalid")
+elif distance <= 5:
+    fee = 0.70
+elif distance <= 15:
+    fee = 0.60
+else:
+    fee = 0.50
+if distance >= 0:
+    distancefee = distance * fee
+    total = startingfee + distancefee
+    print(f"Starting fee {startingfee}AZN")
+    print(f"Distance fee {distancefee}AZN")
+    print(f"Total fare {total}AZN")
+
+
+
+#Task13
+age = int(input("Enter your age"))
+salary = int(input("Enter your monthly salary"))
+amount = int(input("Enter credit amount"))
+if age < 18:
+    print("Reject becasue you are maladoy")
+else:
+    if salary < 500:
+        print("Reject because your kasibsan utanmaz adam helem gelir kredit goturur ged ozve adam balasi kimi is tap")
+    else:
+        if salary * 10 < amount:
+            print("Reject razmerve gore mebleg sec")
+        else:
+            print("Accept")
+    
+
+
+#Task14
